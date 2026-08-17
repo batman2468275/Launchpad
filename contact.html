@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Launchpad Sites</title>
+<meta name="description" content="Book a call or send a message to get started on your Launchpad Sites website.">
+<meta name="theme-color" content="#0A1E33">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/img/rocket-mark.png" alt="" class="brand-mark" width="40" height="40">
+      <span class="brand-word">
+        <span class="word-row">
+          <span class="word">LAUNCHPAD</span>
+          <span class="parent-label">— BY ASTROFIELD</span>
+        </span>
+        <span class="tag">TO THE MOON</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="process.html">Process</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="refunds.html">Refunds</a>
+      <a href="echo-studio.html">Echo Studio</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary btn-sm nav-book">Book a call</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm desktop-only">Book a call</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="min-height: 36vh;">
+    <div class="hero-stars" data-parallax="0.06"></div>
+    <div class="container">
+      <div class="hero-copy" style="max-width: 680px;">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's get your business online.</h1>
+        <p class="hero-sub">Book a call or send a message — either way, we'll follow up within a business day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 20px;">
+    <div class="container contact-grid">
+
+      <div class="reveal">
+        <div class="card contact-info-card">
+          <h3>Reach us directly</h3>
+          <div class="contact-line">
+            <div class="icon-badge">✉️</div>
+            <div>
+              <small>Email</small>
+              <a href="mailto:hello@launchpadsites.com">hello@launchpadsites.com</a>
+            </div>
+          </div>
+          <div class="contact-line">
+            <div class="icon-badge">📅</div>
+            <div>
+              <small>Book a call</small>
+              <a href="https://calendly.com/launchpadsites/30min">calendly.com/launchpadsites/30min</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://calendly.com/launchpadsites/30min" class="btn btn-primary btn-block" style="margin-top: 20px;">Book a call on Calendly</a>
+        <p style="font-size: 0.8rem; color: var(--ink-faint); margin-top: 10px;">Placeholder email and Calendly link shown above — swap in the real ones before going live.</p>
+      </div>
+
+      <div class="card form-card reveal">
+        <h3>Send us a message</h3>
+        <p style="font-size: 0.92rem;">Fill this out and we'll get back to you. No commitment required.</p>
+
+        <!--
+          This form has no backend. Before going live, wire it up to a form
+          handler such as Formspree, Netlify Forms, or a custom endpoint.
+        -->
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Full name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Jane Smith" autocomplete="name">
+              <span class="field-error">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="cf-business">Business name</label>
+              <input type="text" id="cf-business" name="business" placeholder="Smith Plumbing Co." autocomplete="organization">
+              <span class="field-error">Please enter your business name.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="jane@example.com" autocomplete="email">
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="cf-phone">Phone</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="(630) 555-0134" autocomplete="tel">
+              <span class="field-error">Please enter a valid phone number.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Tell us about your business</label>
+            <textarea id="cf-message" name="message" placeholder="What do you do, and what would you like your website to help with?"></textarea>
+            <span class="field-error">Tell us a little about your business.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/img/rocket-mark.png" alt="Launchpad Sites" class="brand-mark" width="36" height="36">
+          <span class="brand-word">
+            <span class="word">LAUNCHPAD</span>
+            <span class="tag">TO THE MOON</span>
+          </span>
+        </a>
+        <p>Websites for local businesses that don't have one yet. Built fast, priced fair.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="process.html">Process</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="refunds.html">Refunds</a>
+        <a href="echo-studio.html">Echo Studio</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:hello@launchpadsites.com">hello@launchpadsites.com</a>
+        <a href="https://calendly.com/launchpadsites/30min">Book a call</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Launchpad Sites. All rights reserved.</span>
+      <span>Part of the Astrofield family, alongside Echo Studio.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
